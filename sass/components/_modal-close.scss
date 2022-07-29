@@ -1,0 +1,24 @@
+.modal-close {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+    transform: translate(-25%, 25%);
+
+    align-items: center;
+
+
+    width: 30px;
+    height: 30px;
+
+    background: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: transform var(--animation);
+    cursor: pointer;
+
+&:hover>svg,
+&:focus>svg {
+    fill: var(--accent-color);
+}
+}

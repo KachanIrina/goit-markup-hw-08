@@ -1,0 +1,117 @@
+.form {
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+&__label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+}
+
+&__text {
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primery-text-color);
+}
+
+&__icon {
+    position: absolute;
+
+    left: 12px;
+    bottom: 11px;
+
+    fill: var(--title-text-color);
+}
+
+&__input {
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    padding-right: 5px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background-color: transparent;
+    outline: transparent;
+
+    transition: border-color var(--animation), fill var(--animation)
+}
+
+&__input:hover,
+&__input:focus-within+.form__icon {
+    fill: var(--accent-color);
+}
+
+&__input:focus {
+    border-color: var(--accent-color);
+}
+
+&__comment {
+    width: 448px;
+    height: 120px;
+    padding: 12px;
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background-color: transparent;
+    outline: transparent;
+    transition: border-color var(--animation);
+}
+
+&__comment:focus {
+    border-color: var(--accent-color);
+}
+
+&__link {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+&__button {
+    display: flex;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+
+    padding: 10px 55px;
+}
+
+&__label-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+&__check {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8.38px;
+
+    width: 16px;
+    height: 15px;
+    outline: 2px solid var(--title-text-color);
+
+    fill: var(--white-color);
+
+    transition: background-color var(--animation), outline var(--animation);
+}
+
+&__checkbox:checked+.form__check {
+    background-color: var(--accent-color);
+    outline: transparent;
+}
+
+&__agreement {
+    user-select: none;
+}
+}

@@ -1,0 +1,36 @@
+.social-media {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        color: #AFB1B8;
+    
+        transition: color, background-color, border-radius var(--animation);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+        color: var(--white-color);
+        background-color: var(--accent-color);
+        border-radius: 50%;   
+    }
+    
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    
+    &__icon {
+        fill: currentColor;
+    }
+    
+        &__link--round {
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white-color);
+        }
+}
