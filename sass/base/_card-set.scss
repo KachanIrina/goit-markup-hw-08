@@ -4,14 +4,16 @@
     gap: var(--indent);
 
     &__item {
-        flex-basis: 100%; 
-        
-        @media screen and (min-width:768px) {
-            flex-basis: calc((100% - var(--indent)) / var(--items));
+        @media screen and (max-width:767px) {
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
         }
+        @media screen and (min-width:768px) {
+            flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+            }
 
         @media screen and (min-width:1200px) {
-            flex-basis: calc((100% - var(--indent) * 3) / var(--items));
+            flex-basis: calc((100% - var(--indent) * (var(--items) - 1) ) / var(--items));
         }
     }
 }
+

@@ -27,6 +27,12 @@ img {
             background-color: var(--accent-color);
             border-radius: 2px;
         }
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+                fill: var(--accent-color);
+        }
 }
 
 .list {
