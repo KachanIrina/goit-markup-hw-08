@@ -23,4 +23,11 @@
         
         color: var(--white-color);
     }
+
+        @media screen and (max-width:767px) {
+            
+            
+            margin-top: 60px;
+            margin-left: 0;
+        }
 }
