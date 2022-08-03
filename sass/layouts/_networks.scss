@@ -1,7 +1,19 @@
 .networks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-left: 70px;
     width: 206px;
     height: 80px;
+
+
+    @media screen and (min-width: 768px) {
+            margin-left: 165px;
+        }
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
 
     &__social-media {
             align-items: center;
