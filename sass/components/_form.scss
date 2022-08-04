@@ -31,7 +31,7 @@
 }
 
 &__input {
-    width: 448px;
+    
     height: 40px;
     padding-left: 42px;
     padding-right: 5px;
@@ -41,7 +41,11 @@
     background-color: transparent;
     outline: transparent;
 
-    transition: border-color var(--animation), fill var(--animation)
+    transition: border-color var(--animation), fill var(--animation);
+    @media screen and (min-width: 1200px) {
+            max-width: 448px;
+        }
+
 }
 
 &__input:hover,
@@ -54,7 +58,7 @@
 }
 
 &__comment {
-    width: 448px;
+    max-width: 448px;
     height: 120px;
     padding: 12px;
     resize: none;
@@ -72,6 +76,28 @@
 &__link {
     color: var(--accent-color);
     text-decoration: underline;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.17;
+    }
+}
+
+&__agreement {
+    user-select: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;    
+    letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.17;
+    }
 }
 
 &__button {
@@ -111,7 +137,4 @@
     outline: transparent;
 }
 
-&__agreement {
-    user-select: none;
-}
 }

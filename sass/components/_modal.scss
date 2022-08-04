@@ -3,9 +3,11 @@
     top: 50%;
     left: 50%;
     padding: 40px;
-
-    min-width: 528px;
-    min-height: 581px;
+    width: 100%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -15,6 +17,10 @@
 
     transition: transform var(--animation);
 
+    @media screen and (min-width: 1200px) {
+       max-width: 528px;
+       max-height: 581px;
+    }
 &__title {
 
     font-weight: 700;

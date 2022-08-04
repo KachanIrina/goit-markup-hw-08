@@ -36,6 +36,11 @@
     }
 & .conteiner {
     margin: 0;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-left: 76px;
+    }
+    
 }
 
 &__logo {
@@ -43,6 +48,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 231px;
 
     & .logo {
             padding-top: 0;
