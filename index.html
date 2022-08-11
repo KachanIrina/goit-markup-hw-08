@@ -134,13 +134,40 @@
             <div class="conteiner">
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list card-set">
-                    <li class="item presentation__imeg"><img src="./imeges/box1.jpg" alt="ноутбук" width="370">
+                    <li class="item presentation__imeg">
+                        <picture>
+                            <source
+                            media="(min-width: 1200px)"
+                            srcset="./imeges\presentation\img01.jpg 1x, ./imeges\presentation\img01@2x.jpg 2x"
+                            type="image/jpg"
+                            />
+                            <img src="./imeges\presentation\img01.jpg" alt="ноутбук" width="370">
+                            </picture>
+
                         <p class="presentation__text">Десктопные приложения</p>
                     </li>
-                    <li class="item presentation__imeg"><img src="./imeges/box2.jpg" alt="телефон" width="370">
+                    <li class="item presentation__imeg">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)"
+                            srcset="./imeges\presentation\img02.jpg 1x, ./imeges\presentation\img02@2x.jpg 2x" 
+                            type="image/jpg" 
+                            />
+                            <img src="./imeges\presentation\img02.jpg" alt="телефон" width="370">
+                        </picture>
+                        
                         <p class="presentation__text">Мобильные приложения</p>
                     </li>
-                    <li class="item presentation__imeg"><img src="./imeges/box3.jpg" alt="планшет" width="370">
+                    <li class="item presentation__imeg">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)"
+                            srcset="./imeges\presentation\img03.jpg 1x, ./imeges\presentation\img03@2x.jpg 2x" 
+                            type="image/jpg" 
+                            />
+                            <img src="./imeges\presentation\img03.jpg" alt="планшет" width="370">
+                        </picture>
+                        
                         <p class="presentation__text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -153,7 +180,25 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team party__list list card-set">
                     <li class="team__item team__item--shadow card-set__item">
-                        <img src="./imeges/img(1).jpg" alt="Игорь Демьяненко" width="270">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)"
+                            srcset="./imeges\team\img01_lg.jpg 1x, ./imeges\team\img01_lg@2x.jpg 2x" 
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./imeges\team\img01_md.jpg 1x, ./imeges\team\img01_md@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./imeges\team\img01_sm.jpg 1x, ./imeges\team\img01_sm@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <img src="./imeges\team\img01_lg.jpg" alt="Игорь Демьяненко" width="450">
+                        </picture>
+                        
                         <div class="team__desc">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__text" lang="en">Product Designer</p>
@@ -187,7 +232,25 @@
                         </div>
                     </li>
                     <li class="team__item team__item--shadow card-set__item">
-                        <img src="./imeges/img(2).jpg" alt="Ольга Репина" width="270">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./imeges\team\img02_lg.jpg 1x, ./imeges\team\img02_lg@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./imeges\team\img02_md.jpg 1x, ./imeges\team\img02_md@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./imeges\team\img02_sm.jpg 1x, ./imeges\team\img02_sm@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <img src="./imeges\team\img02_sm.jpg" alt="Ольга Репина" width="450">
+                        </picture>
+                        
                         <div class="team__desc">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__text" lang="en">Frontend Developer</p>
@@ -220,7 +283,25 @@
                         </div>
                     </li>
                     <li class="team__item team__item--shadow card-set__item">
-                        <img src="./imeges/img(3).jpg" alt="Николай Тарасов" width="270">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./imeges\team\img03_lg.jpg 1x, ./imeges\team\img03_lg@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./imeges\team\img03_md.jpg 1x, ./imeges\team\img03_md@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./imeges\team\img03_sm.jpg 1x, ./imeges\team\img03_sm@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <img src="./imeges\team\img03_sm.jpg" alt="Николай Тарасов" width="450">
+                        </picture>
+                    
                         <div class="team__desc">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__text" lang="en">Marketing</p>
@@ -253,7 +334,25 @@
                         </div>
                     </li>
                     <li class="team__item team__item--shadow card-set__item">
-                        <img src="./imeges/img(4).jpg" alt="Михаил Ермаков" width="270">
+                        <picture>
+                            <source 
+                            media="(min-width: 1200px)" 
+                            srcset="./imeges\team\img04_lg.jpg 1x, ./imeges\team\img04_lg@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(min-width: 768px)" 
+                            srcset="./imeges\team\img04_md.jpg 1x, ./imeges\team\img04_md@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <source 
+                            media="(max-width: 767px)" 
+                            srcset="./imeges\team\img04_sm.jpg 1x, ./imeges\team\img04_sm@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                            <img src="./imeges\team\img04_sm.jpg" alt="Михаил Ермаков" width="450">
+                        </picture>
+                        
                         <div class="team__desc">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text" lang="en">UI Designer</p>

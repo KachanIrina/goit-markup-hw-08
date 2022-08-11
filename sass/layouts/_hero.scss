@@ -4,7 +4,37 @@
 
     text-align: center;
     background: #C4C4C4;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/Img\(14\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/Header-img_sm.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../imeges/hero/Header-img_sm@2x.jpg);
+        }
+
+    @media screen and (min-width: 768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/Header-img_md.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../imeges/hero/Header-img_md@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero/Header-img_lg.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../imeges/hero/Header-img_lg@2x.jpg);
+            }
+    }
 
     &__title {
         margin-top: 0;
