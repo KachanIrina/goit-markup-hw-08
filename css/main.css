@@ -1369,6 +1369,17 @@ textarea::placeholder {
       flex-wrap: wrap;
   padding-left: 0;
   gap: 30px;
+  /*&__nav &__filter:not(:last-child) {
+      margin-right: 8px;
+  }
+
+  &__nav &__filter:nth-last-child(-n + 2) {
+      margin-top: 15px;
+
+      @media screen and (min-width:768px) {
+          margin-top: 0;
+      }
+  }*/
 }
 @media screen and (min-width: 1200px) {
   .portfolio {
@@ -1385,23 +1396,16 @@ textarea::placeholder {
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-bottom: 50px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-.portfolio__nav .portfolio__filter:not(:last-child) {
-  margin-right: 8px;
-}
-.portfolio__nav .portfolio__filter:nth-last-child(-n+2) {
-  margin-top: 15px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio__nav .portfolio__filter:nth-last-child(-n+2) {
-    margin-top: 0;
   }
 }
 .portfolio__button {
